@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/newsDetailLayout"
+    android:padding="16dp">
+
+
+    <!-- 图片 -->
+    <ImageView
+        android:id="@+id/imageViewNewsDetail"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+    <!-- 标题 -->
+    <TextView
+        android:id="@+id/textViewTitleDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="News Title"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- 正文 -->
+    <TextView
+        android:id="@+id/textViewContentDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="News Content" />
+
+    <!-- "Related News" 标题 -->
+    <TextView
+        android:id="@+id/textViewRelatedTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Related News"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- 与 "Related News" 相关的新闻列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewRelatedNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+
+
+</LinearLayout>
